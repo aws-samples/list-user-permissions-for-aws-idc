@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "aws-idc-list-user-permissions"
+version = "0.1.0"
+description = ""
+authors = ["Keith Rozario <keithjosephrozario@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+boto3 = "^1.34.91"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+black = "^24.4.0"
+bandit = {extras = ["baseline"], version = "^1.7.8"}
+moto = "^5.0.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    # to ignore datetime.datetime.utcnow() warning from boto
+    "ignore::DeprecationWarning"
+]
+
+[tool.poetry.scripts]
+aws-idc-list-user-permissions = "aws_idc_list_user_permissions.aws_idc_list_user_permissions:main"

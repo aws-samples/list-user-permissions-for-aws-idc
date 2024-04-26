@@ -55,7 +55,7 @@ def list_user_permissions(profile: str, region: str):
     print(f"Found {len(instances)} IDC Instances.")
     if len(instances) == 0:
         print("No instances found ... exiting")
-        exit(1)
+        return None
 
     # initialize empty list of all user assignments
     full_assignments = list()

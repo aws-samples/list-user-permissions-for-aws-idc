@@ -22,10 +22,12 @@ def output_to_jsonl(user_assignments: list, filename: str) -> None:
     """
 
     file_path = Path(filename)
-    with open(file_path, "w") as output_file:
+    with open(file_path, "w", encoding="utf-8") as output_file:
         for assignment in user_assignments:
             output_file.write(json.dumps(assignment, default=json_serial))
             output_file.write("\n")
+
+    print(f"Long output available at {file_path}")
 
 
 def output_to_csv(user_assignments: list, filename: str) -> None:
@@ -34,7 +36,7 @@ def output_to_csv(user_assignments: list, filename: str) -> None:
     """
 
     file_path = Path(filename)
-    with open(file_path, "w") as output_file:
+    with open(file_path, "w", encoding="utf-8") as output_file:
         fieldnames = [
             "UserName",
             "AccountName",
@@ -66,5 +68,5 @@ def output_to_csv(user_assignments: list, filename: str) -> None:
             }
 
             writer.writerow(assignment_row)
-
+        print(f"Short output available at {file_path}")
     return None

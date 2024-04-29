@@ -20,11 +20,11 @@ The script outputs two files, a short 5 column CSV, and a long jsonl file.
 The jsonl file contains all details about the user, account, permission set, and group (if applicable), in a denormalized jsonl file. This file contains one json document per line, to make discovery easy.
 
 The csv file contains only the 5 columns:
-    * User Name (this is the user's display name in AWS IDC)
-    * Account Name (the name of the account in AWS Organizations)
-    * Permission Set Name (the name of the permission set)
-    * InheritfromGroup (a column to indicate if the user inherited the permissions from a group or not)
-    * GroupName (if the user inherited this permission set from a group, this is the name of that group)
+* User Name (this is the user's display name in AWS IDC)
+* Account Name (the name of the account in AWS Organizations)
+* Permission Set Name (the name of the permission set)
+* InheritfromGroup (a column to indicate if the user inherited the permissions from a group or not)
+* GroupName (if the user inherited this permission set from a group, this is the name of that group)
 
 ## Notes
 

@@ -1,5 +1,7 @@
 # AWS IDC List User Permissions
 
+The following package is still in Beta. 
+
 List all users and their corresponding permission set within an AWS Identity Center instance. AWS Identity Center is the new name for AWS SSO.
 
 Will iterate through all users, and determine their permission sets (either directly attached to the user, or via a Group).
@@ -7,9 +9,14 @@ Will iterate through all users, and determine their permission sets (either dire
 ## Install & Use
 
     $ pip install aws-idc-list-user-permissions
+    
+## Use
+
     $ aws-idc-list-user-permissions
 
-Ensure that the you run this in the account where AWS Identity Center (previously AWS SSO) is setup, and the in the correct region. You may supply a region and aws profile if you use the non default:
+Ensure that the you run this in the account where AWS Identity Center (previously AWS SSO) is setup, and the in the correct region. 
+
+You may supply a region and aws profile if you use the non default:
 
     $ aws-idc-list-user-permissions --profile my-org-profile --region us-east-1
 

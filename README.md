@@ -8,17 +8,21 @@ Will iterate through all users, and determine their permission sets (either dire
 
 ## Install & Use
 
-    $ pip install aws-idc-list-user-permissions
+As a pre-requisite, you will need Python 3.8 and above to run.
+
+Run the following command to pip install the package:
+
+    pip install aws-idc-list-user-permissions
     
 ## Use
 
-    $ aws-idc-list-user-permissions
+    aws-idc-list-user-permissions
 
 Ensure that the you run this in the account where AWS Identity Center (previously AWS SSO) is setup, and the in the correct region. 
 
 You may supply a region and aws profile if you use the non default:
 
-    $ aws-idc-list-user-permissions --profile my-org-profile --region us-east-1
+    aws-idc-list-user-permissions --profile my-org-profile --region us-east-1
 
 ## Output
 

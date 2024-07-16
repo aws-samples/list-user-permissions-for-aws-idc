@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "aws-idc-list-user-permissions"
+name = "list-user-permissions-for-aws-idc"
 version = "0.1.0"
 description = ""
-authors = ["Keith Rozario <keithjosephrozario@gmail.com>"]
+authors = ["Keith Rozario <krozario@amazon.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -27,4 +27,4 @@ filterwarnings = [
 ]
 
 [tool.poetry.scripts]
-aws-idc-list-user-permissions = "aws_idc_list_user_permissions.aws_idc_list_user_permissions:main"
+list-user-permissions-for-aws-idc = "list_user_permissions_for_aws_idc.list_user_permissions_for_aws_idc:main"

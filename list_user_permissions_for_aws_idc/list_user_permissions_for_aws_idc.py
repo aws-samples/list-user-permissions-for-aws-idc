@@ -1,5 +1,5 @@
 import click
-from aws_idc_list_user_permissions.list_user_permissions import list_user_permissions
+from list_user_permissions_for_aws_idc.list_user_permissions import list_user_permissions
 
 
 @click.command()

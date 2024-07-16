@@ -1,5 +1,5 @@
 import boto3
-from aws_idc_list_user_permissions.list_utils import (
+from list_user_permissions_for_aws_idc.list_utils import (
     list_accounts,
     list_instances,
     list_permission_sets,
@@ -8,7 +8,7 @@ from aws_idc_list_user_permissions.list_utils import (
     list_users,
     describe_permissions_sets,
 )
-from aws_idc_list_user_permissions.file_output_utils import (
+from list_user_permissions_for_aws_idc.file_output_utils import (
     output_to_jsonl,
     output_to_csv,
 )

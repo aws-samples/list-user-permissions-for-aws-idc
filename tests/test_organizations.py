@@ -1,6 +1,6 @@
 import boto3
 from moto import mock_aws
-from aws_idc_list_user_permissions.list_utils import list_accounts
+from list_user_permissions_for_aws_idc.list_utils import list_accounts
 
 
 @mock_aws

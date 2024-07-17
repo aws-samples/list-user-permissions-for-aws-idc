@@ -1,9 +1,13 @@
 [tool.poetry]
 name = "list-user-permissions-for-aws-idc"
-version = "0.1.0"
-description = ""
+version = "0.1.2"
+description = "List users and permissions inside AWS Identity Center"
 authors = ["Keith Rozario <krozario@amazon.com>"]
 readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/aws-samples/list-user-permissions-for-aws-idc"
+repository = "https://github.com/aws-samples/list-user-permissions-for-aws-idc"
+keywords = ["aws", "idc", "sso"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
